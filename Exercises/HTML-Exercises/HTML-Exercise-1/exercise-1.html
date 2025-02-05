@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <Form>
+        <label for="name">Name: <input type="text" required placeholder="What's your Name?"></label><br><br>
+        <label for="email">Email: <input type="email" required placeholder="Enter your email"></label><br><br>
+        <label for="rating">How satisfied are you with this form? <br><br></label>
+            <label>
+                <input type="radio" name="satisfaction" value="very-satisfied">
+                Very Satisfied
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="satisfied">
+                Satisfied
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="neutral">
+                Neutral
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="dissatisfied">
+                Dissatisfied
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="very-dissatisfied">
+                Very dissatisfied
+            </label><br><br>
+        <label>What features did you like? (Select all that apply): </label><br>
+            <label for="feature1"><br>
+                <input type="checkbox" id="feature1" name="features[]" value="speed">Speed
+            </label>
+            <label for="feature2"><br>
+                <input type="checkbox" id="feature2" name="features[]" value="content_quality">Content quality
+            </label>
+            <label for="feature3"><br>
+                <input type="checkbox" id="feature3" name="features[]" value="user_interface">User interface
+            </label>
+            <label for="feature4"><br>
+                <input type="checkbox" id="feature4" name="features[]" value="ease_of_navigation">Ease of navigation
+            </label>
+            <label for="feature5"><br>
+                <input type="checkbox" id="feature5" name="features[]" value="other_feature">Other (please specify):
+                <input type="text" name="other_feature" placeholder="Specify other feature">
+            </label><br><br>
+        <button type="submit">Submit</button>
+        <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+            <p>Thank you for participating in our survey!</p>
+          </div>
+    </Form>
+</body>
+</html>
