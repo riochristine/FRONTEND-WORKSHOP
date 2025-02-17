@@ -1,6 +1,6 @@
 const convertButton = document.querySelector("button");
 
-convertButton.addEventListener("click", function callback(){
+convertButton.addEventListener("click", () => {
     const temp = parseFloat(document.getElementById("temp").value);
 
     if (isNaN(temp)) {
